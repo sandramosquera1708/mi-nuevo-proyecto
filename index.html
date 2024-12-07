@@ -1,0 +1,266 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style.css"> <!-- Vinculación al archivo CSS -->  
+    <title>Página Web Personal de Sandra Patricia Mosquera</title>  
+    <style>  
+        /* Estilos CSS */  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #e8f5e9; /* Color fondo suave (verde claro) */  
+        }  
+
+        header {  
+            background-color: #29545a; /* Verde oscuro */  
+            color: #fff;  
+            padding: 20px;  
+            text-align: center;  
+        }  
+
+        nav {  
+            background-color: #0fc0b7; /* Verde firme */  
+            padding: 10px;  
+            text-align: center;  
+            position: sticky;  
+            top: 0;  
+            z-index: 1000;  
+        }  
+
+        nav a {  
+            color: #fff;  
+            text-decoration: none;  
+            margin: 0 15px;  
+            transition: color 0.3s;  
+        }  
+
+        nav a:hover {  
+            color: #c8e6c9; /* Verde claro al pasar el ratón */  
+        }  
+
+        .profile-image {  
+            width: 250px; /* Aumentar tamaño de la imagen */  
+            height: 250px; /* Aumentar tamaño de la imagen */  
+            border-radius: 50%;  
+            border: 5px solid #fff;  
+            margin-right: 20px;  
+        }  
+
+        .profile-info {  
+            display: flex;  
+            align-items: center;  
+            justify-content: center;  
+        }  
+
+        .profile-info h1 {  
+            font-size: 36px;  
+            margin: 0;  
+        }  
+
+        .profile-info p {  
+            font-size: 18px;  
+            margin: 5px 0 0 0;  
+        }  
+
+        section {  
+            padding: 40px;  
+            background-color: #ffffff; /* Fondo blanco para secciones */  
+            margin: 20px 0;  
+            border-radius: 5px;  
+            box-shadow: 0 2px 5px rgba(34, 205, 218, 0.719); /* Sombra para profundidad */  
+        }  
+
+        section h2 {  
+            font-family: 'Montserrat', sans-serif;  
+            font-weight: bold;  
+            font-size: 24px;  
+            margin-top: 0;  
+            color: #84d388; /* Verde oscuro */  
+        }  
+
+        section p {  
+            line-height: 1.5;  
+        }  
+
+        .argument-box {  
+            border: 1px solid #9ad69d; /* Verde oscuro */  
+            background-color: #f1f8e9; /* Verde muy claro */  
+            padding: 15px;  
+            margin-top: 20px;  
+            border-radius: 5px;  
+        }  
+
+        footer {  
+            background-color: #0fc0b7; /* Color verde oscuro */  
+            color: #fff;  
+            padding: 20px;  
+            text-align: center;  
+        }  
+
+        .social-icons {  
+            margin-top: 10px;  
+        }  
+
+        .social-icons a {  
+            margin: 0 10px;  
+            color: #fff;  
+            text-decoration: none;  
+        }  
+
+        /* Media Queries para diseño responsivo */  
+        @media (max-width: 480px) {  
+            .profile-info {  
+                flex-direction: column;  
+                align-items: center;  
+            }  
+
+            .profile-image {  
+                margin: 0 0 20px 0;  
+            }  
+
+            nav a {  
+                margin: 0 5px; /* Reducir margen en móviles */  
+                font-size: 14px; /* Reducir tamaño de fuente */  
+            }  
+
+            section {  
+                padding: 20px; /* Reducir padding en móviles */  
+            }  
+        }  
+
+        @media (max-width: 768px) {  
+            .profile-info h1 {  
+                font-size: 28px; /* Cambiar tamaño de fuente */  
+            }  
+
+            .argument-box {  
+                padding: 10px; /* Reducir padding en cajas de argumento */  
+            }  
+
+            nav {  
+                padding: 5px; /* Modificar padding */  
+            }  
+
+            section h2 {  
+                font-size: 22px; /* Reducir tamaño de los encabezados */  
+            }  
+        }  
+
+        @media (max-width: 1024px) {  
+            nav {  
+                padding: 10px; /* Modificar padding */  
+                text-align: center; /* Asegurarse de que el texto esté centrado */  
+            }  
+
+            section {  
+                margin: 10px; /* Reducir margen de las secciones */  
+            }  
+
+            .profile-info p {  
+                font-size: 16px; /* Cambiar tamaño de fuente en párrafos */  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <div class="profile-info">  
+            <img src="media/imagen-introduccion.jpg" alt="Sandra Patricia Mosquera Rivas - Ingeniería Multimedia" class="profile-image">  
+            <div>  
+                <h1>SANDRA PATRICIA MOSQUERA RIVAS</h1>  
+                <p>Ingeniera Multimedia</p>  
+            </div>  
+        </div>  
+    </header>  
+    
+    <nav>  
+        <a href="#seccion1">Introducción</a>  
+        <a href="#seccion2">Experiencia Profesional</a>  
+        <a href="#seccion3">Formación Académica</a>  
+        <a href="#proyectos">Proyectos</a>  
+        <a href="#video">Video de Presentación</a>  
+        <a href="#contacto">Contáctame</a>  
+    </nav>  
+
+    <main>  
+        <section id="seccion1">  
+            <h2>Introducción</h2>  
+            <p>Hola, soy Sandra Patricia Mosquera, y estoy aquí para compartir mi trayectoria profesional y académica.</p>  
+            <div class="argument-box">  
+                <p>La Ingeniería Multimedia combina la creatividad y la técnica, permitiendo desarrollar soluciones innovadoras en el ámbito digital. Este campo es fundamental en la creación de contenido interactivo y experiencias de usuario atractivas.</p>  
+            </div>  
+        </section>  
+
+        <section id="seccion2">  
+            <h2>Experiencia Profesional</h2>  
+            <h3>Desarrolladora Web</h3>  
+            <p>He trabajado en varios proyectos de desarrollo web, utilizando tecnologías modernas como HTML, CSS y JavaScript.</p>  
+            <img src="media/imagen-experiencia.jpg" alt="Proyecto de Desarrollo Web de Sandra" style="max-width:100%; height:auto;"> <!-- Mejora en la accesibilidad -->  
+            <div class="argument-box">  
+                <p>Mi experiencia en desarrollo web me ha permitido aplicar principios de diseño multimedia, optimizando la interacción del usuario y creando interfaces intuitivas que mejoran la usabilidad de los productos digitales.</p>  
+            </div>  
+        </section>  
+
+        <section id="seccion3">  
+            <h2>Formación Académica</h2>  
+            <h3>Ingeniería Multimedia</h3>  
+            <p>Estoy cursando actualmente el programa de Ingeniería Multimedia en la UNAD. Me apasiona el diseño y la programación.</p>  
+            <img src="media/imagen-formacion.jpg" alt="Estudio en Ingeniería Multimedia" style="max-width:100%; height:auto;"> <!-- Mejora en la accesibilidad -->  
+            <div class="argument-box">  
+                <p>La formación en Ingeniería Multimedia me proporciona las herramientas necesarias para integrar diferentes disciplinas, como el diseño gráfico, la programación y la comunicación, para crear productos digitales que impacten y sean funcionales.</p>  
+            </div>  
+        </section>  
+
+        <section id="proyectos">  
+            <h2>Proyectos Destacados</h2>  
+            <p>A continuación, algunos de mis proyectos destacados en el campo de la animación:</p>  
+            <ul>  
+                <li><strong>Animación Interactiva:</strong> Creé una animación interactiva para una campaña de concientización sobre el reciclaje, donde los usuarios podían interactuar y aprender sobre la importancia de reciclar.</li>  
+                <li><strong>Videojuego Educativo:</strong> Desarrollé un videojuego educativo que enseña conceptos básicos de matemáticas a niños, utilizando gráficos animados y un diseño atractivo.</li>  
+                <li><strong>Cortometraje Animado:</strong> Participé en la producción de un cortometraje animado que aborda temas de inclusión social, utilizando técnicas de animación 2D y 3D.</li>  
+                <li><strong>Simulación de Realidad Aumentada:</strong> Desarrollé una aplicación que utiliza realidad aumentada para enseñar historia, permitiendo a los usuarios ver eventos históricos en su entorno real.</li>  
+                <li><strong>Animación de Marca:</strong> Creé una serie de animaciones para una marca local, enfocadas en su identidad visual y en contar su historia de manera atractiva.</li>  
+            </ul>  
+        </section>  
+
+        <section id="video">  
+            <h2>Video de Presentación</h2>  
+            <p>A continuación, te presento un video que resume mi experiencia y objetivos profesionales.</p>  
+            <div>  
+                <video width="320" height="240" controls>  
+                    <source src="media/video-presentacion.mp4" type="video/mp4">  
+                    Tu navegador no soporta video HTML5.  
+                </video>  
+            </div>  
+        </section>  
+
+        <section id="contacto">  
+            <h2>Contáctame</h2>  
+            <form>  
+                <label for="nombre">Nombre:</label>  
+                <input type="text" id="nombre" name="nombre" required>  
+
+                <label for="correo">Correo Electrónico:</label>  
+                <input type="email" id="correo" name="correo" required>  
+
+                <label for="mensaje">Mensaje:</label>  
+                <textarea id="mensaje" name="mensaje" required></textarea>  
+
+                <button type="submit">Enviar</button>  
+            </form>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2024 Sandra Patricia Mosquera Rivas. Todos los derechos reservados.</p>  
+        <div class="social-icons">  
+            <a href="#">Facebook</a>  
+            <a href="#">Twitter</a>  
+            <a href="#">LinkedIn</a>  
+        </div>  
+    </footer>  
+</body>  
+</html>
